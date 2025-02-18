@@ -1,1 +1,1 @@
-aujourdui je me suit documenter sur les command du laravel et les version compatible avec laravel 8 et 9 ensuit j'ai modifier le ficher php.ini
+aujourdui je me suit documenter sur les command du laravel et les version compatible avec laravel 8 et 9 ensuit j'ai modifier le ficher php.ini apres ca j'ai fait plusieur command pour filtrer quelque command que je ne connue pas ensuit j'ai fait une docummentaion sur le but de chaque ficher 
