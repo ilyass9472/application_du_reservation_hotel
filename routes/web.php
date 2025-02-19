@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\roomController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+    // dump($person);hiya var_dump
+    // dd($person);hiya var_dump and die
+
+Route::view('/about', 'about');
+Route::controller(roomController::class)->group(function(){
+    Route::get('/room', 'index');
 });
