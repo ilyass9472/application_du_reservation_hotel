@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\roomController;
+// use App\Http\Controllers\RoomController as ControllersRoomController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +20,5 @@ use App\Http\Controllers\roomController;
     // dd($person);hiya var_dump and die
 
 Route::view('/about', 'about');
-Route::controller(roomController::class)->group(function(){
-    Route::get('/room', 'index');
-});
+Route::resource('/room', RoomController::class);
+// n9edro ndiro istitna2 lxi methode ila drna ->exepted(['smiya ta3 lmethode']);

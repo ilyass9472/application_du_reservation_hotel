@@ -12,4 +12,6 @@ save() : utiliser pour sauvgardée un objet deja exist ou un objet qui contine a
 d'abord j'ai connue la diffirence entre put et patch en laravel 
 put : pour update tout les champs et elle son obligatoire
 putch : pour faire update sur un existe champs ou un columme
-ensuit j'ai connue la 
+
+20/02/2025 
+pour aujorduit jai connue que la diffirenc entre get et post 

@@ -1,1 +1,3 @@
-<h1>hello</h1>
+<div @style(['background-color:'.$color'])>
+{{ $message }}
+</div>
