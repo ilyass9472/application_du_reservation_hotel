@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->json('photos'); // json ila kano images 
-            $table->text('description'); // Use text() for longer descriptions
-            $table->float('price', 8, 2); // Define precision
-            $table->integer('duration'); // Assuming it's stored in minutes
+            $table->text('description');
+            $table->float('price', 8, 2);
+            $table->integer('duration'); // min
             $table->timestamps();
         });
     }

@@ -36,7 +36,6 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Photos:</strong>
-                <!-- Change to multiple photo inputs -->
                 <div id="photo-inputs">
                     <input type="text" name="photo[]" class="form-control mb-2" placeholder="Photo URL">
                 </div>

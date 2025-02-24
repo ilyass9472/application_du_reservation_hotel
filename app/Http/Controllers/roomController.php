@@ -21,7 +21,7 @@ class RoomController extends Controller
         return view('rooms.create');
     }
 
-    
+
     public function store(Request $request)
 {
     $request->validate([
@@ -33,7 +33,7 @@ class RoomController extends Controller
         'duration' => 'required|integer|min:1',
     ]);
 
-        
+
         Room::create([
             'name' => $request->name,
             'photos' => json_encode($request->photo),
@@ -46,22 +46,21 @@ class RoomController extends Controller
             ->with('success', 'Chambre ajoutée avec succès.');
     }
 
-    
-    
+
     public function show(Room $room)
     {
-        return view('room.show', compact('room'));
+        return view('rooms.show', compact('room'));
     }
 
-    
-    
+
+
     public function edit(Room $room)
     {
         return view('rooms.edit', compact('room'));
     }
 
-    
-    
+
+
     public function update(Request $request, Room $room)
     {
         $request->validate([
